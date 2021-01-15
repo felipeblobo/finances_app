@@ -1,0 +1,174 @@
+/* -----------Global----------------- */
+:root {
+  --dark-color: #363f5f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f2f5;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: min(90vw, 800px);
+  margin: auto;
+  
+}
+
+/* -----------titles----------------- */
+h1 {
+    font-size: 3rem;
+}
+h2 {
+  margin-top: 3.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--dark-color);
+  font-weight: normal;
+}
+
+/* -----------header----------------- */
+
+header {
+  background-color: #2d4a22;
+  padding: 4rem 0 9rem;
+  text-align: center;
+}
+
+#logo {
+  font-weight: 100;
+  color: #fff;
+}
+
+/* -----------balance----------------- */
+
+#balance {
+  margin-top: -6rem;
+}
+
+#balance h2 {
+  color: #f2f2f2;
+  margin-top: 0;
+}
+
+/* -----------cards----------------- */
+.card {
+  background: white;
+  padding: 1.5rem 2 rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+  color: var(--dark-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.card h3 {
+  font-weight: normal;
+  font-size: 1rem;
+  padding: 0 0 0 0.5rem;
+}
+
+.card p {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+  padding: 0 0 0 0.5rem;
+}
+
+.card.total {
+  background-color: #49aa26;
+  color: #fff;
+}
+
+
+/* -----------imagens----------------- */
+#logoImage {
+    width: 7%;
+    
+}
+
+#income-logo{
+    color:#699367;
+}
+
+#expense-logo{
+    color:#e22727;
+}
+
+#total-logo{
+    color: #fff;
+}
+
+.icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+
+.divImgCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.centerImage {
+    width: 80%;
+    padding: 4rem;
+    
+}
+
+/* -----------table----------------- */
+
+#data-table {
+  width: 100%;
+  border-spacing: 0 0.5rem;
+  color: #969cb3;
+}
+
+table thead tr th:firt-child,
+table thead tr td:firt-child {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table th {
+  background: #fff;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+table tr {
+  opacity: 0.6;
+}
+table tr:hover {
+  opacity: 1;
+}
+
+table td {
+  background: #fff;
+  padding: 1rem 2rem;
+}
+
+td.description {
+  color: var(--dark-color);
+}
+
+td.income {
+  color: #12a454;
+}
+
+td.expense {
+  color: #e92929;
+}
+
+/* -----------footer----------------- */
+footer {
+  text-align: center;
+  padding: 4rem 0 2rem;
+  color: var(--dark-color);
+  opacity: 0.6rem;
+}
