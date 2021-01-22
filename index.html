@@ -4,100 +4,152 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FinançaS Simples</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
   </head>
   <body>
     <header>
-      <div class='headerHeader'>
-        <h1 id='logo'>Finança$ $imples</h1>   
-        <img id='logoImage' src="/images/carteira.svg" alt="carteira">
+      <div class="headerHeader">
+        <h1 id="logo">Finança$ $imples</h1>
+        <img id="logoImage" src="/images/carteira.svg" alt="carteira" />
       </div>
-      
     </header>
 
-    <main class='container'>
-      
-      <div class='mainData'>
-        <section id='balance'>
+    <main class="container">
+      <div class="mainData">
+        <section id="balance">
+          <h2 class="sr-only">Balanço</h2>
 
-            <h2>Balanço</h2>
-    
-            <div class='card'>
-                <div>
-                    <h3>Entradas</h3>
-                    <p>R$ 5.000,00</p>
-                </div>
-                <div class='icone'>
-                    <i id='income-logo' class="fas fa-hand-holding-usd fa-3x"></i>
-                </div>            
+          <div class="card">
+            <div>
+              <h3>Entradas</h3>
+              <p>R$ 5.000,00</p>
             </div>
-            <div class='card'>
-                <div>
-                    <h3>Saídas</h3>
-                    <p>R$ 3.126,15</p>
-                </div>
-                <div class='icone'>
-                    <i id='expense-logo' class="fas fa-hand-holding-usd fa-3x"></i>
-                </div>         
+            <div class="icone">
+              <img src="/images/income.svg" alt="imagem de entradas" />
             </div>
-            <div class='card total'>
-                <div>
-                    <h3>Saldo</h3>
-                    <p>R$ 2.764,85</p>
-                </div>
-                <div class='icone'>
-                    <i id='total-logo' class="fas fa-chart-line fa-3x"></i>
-                </div>        
+          </div>
+          <div class="card">
+            <div>
+              <h3>Saídas</h3>
+              <p>R$ 3.126,15</p>
             </div>
+            <div class="icone">
+              <img src="/images/expense.svg" alt="imagem de saídas" />
+            </div>
+          </div>
+          <div class="card total">
+            <div>
+              <h3>Saldo</h3>
+              <p>R$ 2.764,85</p>
+            </div>
+            <div class="icone">
+              <img src="/images/assets/total.svg" alt="total" />
+            </div>
+          </div>
         </section>
-        <section id='transactions'>
-    
-            <h2>Transações</h2>
-    
-            <table id='data-table'>
-              <thead>
-                <tr>
-                  <th>Descrição</th>
-                  <th>Valor</th>
-                  <th>Data</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class='description'>Luz</td>
-                  <td class='expense'> - R$ 426,40</td>
-                  <td class='date'>25/01/2020</td>
-                </tr>
-                <tr>
-                  <td class='description'>Salário</td>
-                  <td class='income'>R$ 5000,00</td>
-                  <td class='date'>05/01/2020</td>
-                </tr>
-                <tr>
-                  <td class='description'>Internet</td>
-                  <td class='expense'> - R$ 110,32</td>
-                  <td class='date'>01/01/2020</td>
-                </tr>
-                <tr>
-                  <td class='description'>Seguro do veículo</td>
-                  <td class='expense'> - R$ 1325,12</td>
-                  <td class='date'>01/01/2020</td>
-                </tr>
-              </tbody>
-            </table>
-        </section>      
+        <section id="transactions">
+          <h2 class="sr-only">Transações</h2>
+
+          <a onclick='Modal.open()' href="#" class="button new">+ Nova Transação</a>
+
+          <table id="data-table">
+            <thead>
+              <tr>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Data</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="description">Luz</td>
+                <td class="expense">- R$ 426,40</td>
+                <td class="date">25/01/2020</td>
+                <td>
+                  <img src="/images/assets/minus.svg" alt="imagem de menos" />
+                </td>
+              </tr>
+              <tr>
+                <td class="description">Salário</td>
+                <td class="income">R$ 5000,00</td>
+                <td class="date">05/01/2020</td>
+                <td>
+                  <img src="/images/assets/plus.svg" alt="imagem de menos" />
+                </td>
+              </tr>
+              <tr>
+                <td class="description">Internet</td>
+                <td class="expense">- R$ 110,32</td>
+                <td class="date">01/01/2020</td>
+                <td>
+                  <img src="/images/assets/minus.svg" alt="imagem de menos" />
+                </td>
+              </tr>
+              <tr>
+                <td class="description">Seguro do veículo</td>
+                <td class="expense">- R$ 1325,12</td>
+                <td class="date">01/01/2020</td>
+                <td>
+                  <img src="/images/assets/minus.svg" alt="imagem de menos" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </div>
 
-      <div class='divImgCenter'> 
-        <img class='centerImage' src="/images/painel.svg" alt="painel">
+      <div class="divImgCenter">
+        <img class="centerImage" src="/images/painel.svg" alt="painel" />
       </div>
-    
-    </main>  
+    </main>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <div id="form">
+          <h2>Nova Transação</h2>
+          <form action="">
+
+            <div class="input-group">
+              <label class='sr-only' for="description">Descrição</label>
+              <input type="text" id="description" name="description" placeholder='Descrição' />
+            </div>
+
+            <div class="input-group">
+              <label class='sr-only' for="amount">Valor</label>
+              <input step='0.01' type="number" id="amount" name="amount" placeholder='0,00' />
+              <small class='help-info'>Use o sinal - (negativo) para despesas e o sinal , (vírgula) para casas decimais.</small>
+            </div>
+
+            <div class="input-group">
+              <label class='sr-only' for="date">Descrição</label>
+              <input type="date" id="date" name="date" placeholder='01/01/2021' />
+            </div>
+           
+            <div class="input-group actions">
+              <a onclick='Modal.close()' href="#" class="button cancel">Cancelar</a>
+              <button onclick='Modal.close()'>Salvar</button>
+            </div>
+
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <p>Finança$ $imples</p>
     </footer>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
