@@ -161,13 +161,9 @@ header {
     
 }
 
-/* #income-logo{
-    color:#699367;
+td img {
+  cursor: pointer;
 }
-
-#expense-logo{
-    color:#e22727;
-} */
 
 #total-logo{
     color: #fff;

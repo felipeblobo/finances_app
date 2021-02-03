@@ -19,7 +19,7 @@
     <header>
       <div class="headerHeader">
         <h1 id="logo">Finança$ $imples</h1>
-        <img id="logoImage" src="/images/carteira.svg" alt="carteira" />
+        <img id="logoImage" src="./images/carteira.svg" alt="carteira" />
       </div>
     </header>
 
@@ -31,35 +31,34 @@
           <div class="card">
             <div>
               <h3>Entradas</h3>
-              <p>R$ 5.000,00</p>
+              <p id='incomeDisplay'></p>
             </div>
             <div class="icone">
-              <img src="/images/income.svg" alt="imagem de entradas" />
+              <img src="./images/income.svg" alt="imagem de entradas" />
             </div>
           </div>
           <div class="card">
             <div>
               <h3>Saídas</h3>
-              <p>R$ 3.126,15</p>
+              <p id='expenseDisplay'></p>
             </div>
             <div class="icone">
-              <img src="/images/expense.svg" alt="imagem de saídas" />
+              <img src="./images/expense.svg" alt="imagem de saídas" />
             </div>
           </div>
           <div class="card total">
             <div>
               <h3>Saldo</h3>
-              <p>R$ 2.764,85</p>
+              <p id='totalDisplay'></p>
             </div>
             <div class="icone">
-              <img src="/images/assets/total.svg" alt="total" />
+              <img src="./images/assets/total.svg" alt="total" />
             </div>
           </div>
         </section>
         <section id="transactions">
           <h2 class="sr-only">Transações</h2>
-
-          <a onclick='Modal.open()' href="#" class="button new">+ Nova Transação</a>
+          <a onclick='Modal.openClose()' href="#" class="button new">+ Nova Transação</a>
 
           <table id="data-table">
             <thead>
@@ -71,45 +70,14 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="description">Luz</td>
-                <td class="expense">- R$ 426,40</td>
-                <td class="date">25/01/2020</td>
-                <td>
-                  <img src="/images/assets/minus.svg" alt="imagem de menos" />
-                </td>
-              </tr>
-              <tr>
-                <td class="description">Salário</td>
-                <td class="income">R$ 5000,00</td>
-                <td class="date">05/01/2020</td>
-                <td>
-                  <img src="/images/assets/plus.svg" alt="imagem de menos" />
-                </td>
-              </tr>
-              <tr>
-                <td class="description">Internet</td>
-                <td class="expense">- R$ 110,32</td>
-                <td class="date">01/01/2020</td>
-                <td>
-                  <img src="/images/assets/minus.svg" alt="imagem de menos" />
-                </td>
-              </tr>
-              <tr>
-                <td class="description">Seguro do veículo</td>
-                <td class="expense">- R$ 1325,12</td>
-                <td class="date">01/01/2020</td>
-                <td>
-                  <img src="/images/assets/minus.svg" alt="imagem de menos" />
-                </td>
-              </tr>
+              
             </tbody>
           </table>
         </section>
       </div>
 
       <div class="divImgCenter">
-        <img class="centerImage" src="/images/painel.svg" alt="painel" />
+        <img class="centerImage" src="./images/painel.svg" alt="painel" />
       </div>
     </main>
 
@@ -117,7 +85,7 @@
       <div class="modal">
         <div id="form">
           <h2>Nova Transação</h2>
-          <form action="">
+          <form action="" onsubmit="Form.submit(event)">
 
             <div class="input-group">
               <label class='sr-only' for="description">Descrição</label>
@@ -136,10 +104,9 @@
             </div>
            
             <div class="input-group actions">
-              <a onclick='Modal.close()' href="#" class="button cancel">Cancelar</a>
-              <button onclick='Modal.close()'>Salvar</button>
+              <a onclick='Modal.openClose()' href="#" class="button cancel">Cancelar</a>
+              <button>Salvar</button>
             </div>
-
 
 
           </form>
@@ -150,6 +117,6 @@
     <footer>
       <p>Finança$ $imples</p>
     </footer>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
