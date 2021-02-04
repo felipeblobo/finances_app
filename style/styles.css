@@ -89,7 +89,7 @@ a:hover {
   background: #3dd705;
 }
 
-.button.cancel {
+/* .button.cancel {
   width: 100%;
   height: 50px;
   color: #e92929;
@@ -106,6 +106,63 @@ a:hover {
   background: #e92929;
   color: white;
   opacity: 0.8;
+} */
+
+.button.cancel {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  color: #FFF;
+  transition: all 0.5s;
+  position: relative; 
+  
+}
+
+.button.cancel span {
+  z-index: 2; 
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+}
+.button.cancel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid #e929299b;
+  background-color:#e92929a6;
+  border: 2px #e92929 solid;
+  border-radius: 0.25rem;
+}
+.button.cancel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid #e929299b;
+  background-color:#e92929a6;
+  border: 2px #e92929 solid;
+  border-radius: 0.25rem;
+}
+.button.cancel:hover::before {
+  transform: rotate(-45deg);
+  background-color:#e41111;
+}
+.button.cancel:hover::after {
+  transform: rotate(45deg);
+  background-color:#e41111;
+  
 }
 
 /* -----------header----------------- */
@@ -354,21 +411,6 @@ input {
   color: #e6e6d7;
 }
 
-
-
-/* 
-========================
-      BUTTON TWO
-========================
-*/
-
-.btn2 {
-  line-height: 50px;
-  height: 50px;
-  text-align: center;
-  width: auto;
-  cursor: pointer;
-}
 
 @media (max-width: 650px) {
   .centerImage {
