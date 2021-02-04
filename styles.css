@@ -309,7 +309,7 @@ input {
 }
 
 /* -----------footer----------------- */
-footer {
+.footer {
   text-align: center;
   padding: 1rem 0 1rem;
   color: #fff;
@@ -326,17 +326,34 @@ footer {
   cursor: pointer; 
 }
 
+input {
+  background-color: #c5c5c5;
+}
 
-.dark-theme {
+.darkmodal {
 
-  background-color: #111111;
+  background-color: #080808;
+  color: #fffffff;
+}
+
+.dark-theme
+ {
+  background-color: #0D1117;
    
 }
 
-.dark-header {
+.dark-header,
+.darkfooter {
   
-  background-color: #080808;
+  background-color: #06090F;
 }
+.yellowSun {
+  color: rgb(243, 243, 78);
+}
+.whiteMoon { 
+  color: #e6e6d7;
+}
+
 
 
 /* -----------responsividade----------------- */
