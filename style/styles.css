@@ -142,7 +142,6 @@ header {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  
 }
 
 .card h3 {
@@ -155,13 +154,13 @@ header {
   font-size: 2rem;
   line-height: 3rem;
   margin-top: 1rem;
-  padding: 0 0 0 0.5rem;
-  
+  padding: 0 0 0 0.5rem;  
 }
 
 .card.total {
   background-color: #49aa26;
   color: #fff;
+  
 }
 
 /* -----------imagens----------------- */
@@ -206,7 +205,7 @@ td img {
 #data-table {
   width: 100%;
   border-spacing: 0 0.5rem;
-  color: #969cb3;
+  color: #8d4eff;
 }
 
 table thead tr th:firt-child,
@@ -227,7 +226,7 @@ table th {
 }
 
 table tr {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 table tr:hover {
   opacity: 1;
@@ -336,8 +335,8 @@ input {
 }
 
 .darkmodal {
-  background-color: #080808;
-  color: #ffffff;
+  background-color: #0a0a0a;
+  color: #ddd7d7;
 }
 
 .dark-theme {
@@ -355,18 +354,20 @@ input {
   color: #e6e6d7;
 }
 
-/* -----------responsividade----------------- */
 
-@media (min-width: 768px) {
-  html {
-    font-size: 87.5%;
-  }
 
-  #balance {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
+/* 
+========================
+      BUTTON TWO
+========================
+*/
+
+.btn2 {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: auto;
+  cursor: pointer;
 }
 
 @media (max-width: 650px) {
