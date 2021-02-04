@@ -276,14 +276,11 @@ table td {
   padding: 1rem 2rem;
 }
 
-td.description {
+td.description,
+td.date {
   color: var(--dark-color);
 }
 
-td.date {
-  color:#e6e8eb;
-
-}
 td.income {
   color: #12a454;
 }
