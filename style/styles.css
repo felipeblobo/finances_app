@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 html {
@@ -140,6 +141,8 @@ header {
   color: var(--dark-color);
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  
 }
 
 .card h3 {
@@ -153,6 +156,7 @@ header {
   line-height: 3rem;
   margin-top: 1rem;
   padding: 0 0 0 0.5rem;
+  
 }
 
 .card.total {
