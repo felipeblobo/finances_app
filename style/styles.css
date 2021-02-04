@@ -1,7 +1,7 @@
 /* -----------Global----------------- */
 :root {
   --dark-color: #363f5f;
-  --green: #49AA26;
+  --green: #49aa26;
 }
 
 * {
@@ -19,10 +19,9 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: #8D4EFF;
+  background-color: #8d4eff;
   border-radius: 0.2rem;
 }
-
 
 body {
   background: #f0f2f5;
@@ -32,13 +31,11 @@ body {
 .container {
   width: min(90vw, 800px);
   margin: auto;
-  
 }
-
 
 /* -----------titles----------------- */
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 h2 {
   margin-top: 3.2rem;
@@ -55,7 +52,7 @@ h2 {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
 }
@@ -73,17 +70,17 @@ a:hover {
 
 .button.new {
   display: inline-block;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 #savebtn {
   width: 100%;
-  height:50px;
+  height: 50px;
   border: none;
   color: white;
   background: var(--green);
   padding: 0;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   cursor: pointer;
 }
 
@@ -93,21 +90,21 @@ a:hover {
 
 .button.cancel {
   width: 100%;
-  height:50px;
+  height: 50px;
   color: #e92929;
   border: 2px #e92929 solid;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .button.cancel:hover {
   background: #e92929;
   color: white;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 /* -----------header----------------- */
@@ -163,47 +160,41 @@ header {
   color: #fff;
 }
 
-
 /* -----------imagens----------------- */
 #logoImage {
-    width: 7%;
-    
+  width: 7%;
 }
 
 td img {
   cursor: pointer;
 }
 
-#total-logo{
-    color: #fff;
+#total-logo {
+  color: #fff;
 }
 
 .icone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
 }
 
-
 .divImgCenter {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .centerImage {
-    width: 80%;
-    padding: 4rem;
-    
+  width: 80%;
+  padding: 4rem;
 }
 
 /* -----------transactions----------------- */
 
 #transactions {
-
   display: block;
   overflow-x: auto;
-
 }
 
 /* -----------table----------------- */
@@ -212,7 +203,6 @@ td img {
   width: 100%;
   border-spacing: 0 0.5rem;
   color: #969cb3;
-  
 }
 
 table thead tr th:firt-child,
@@ -256,12 +246,11 @@ td.expense {
   color: #e92929;
 }
 
-
 /* -----------modal----------------- */
 .modal-overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   display: flex;
@@ -269,7 +258,6 @@ td.expense {
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-
 }
 
 .modal-overlay.active {
@@ -282,7 +270,6 @@ td.expense {
   position: relative;
   width: 80%;
   max-width: 500px;
-
 }
 
 /* -----------form----------------- */
@@ -293,17 +280,22 @@ td.expense {
 
 input {
   border: none;
-  border-radius: .2rem;
-  padding: .8rem;
+  border-radius: 0.2rem;
+  padding: 0.8rem;
   width: 100%;
 }
 
 .input-group {
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 }
 
 .input-group small {
   opacity: 0.4;
+  margin-top: 1rem;
+}
+
+#amount {
+  margin-bottom: .3rem;
 }
 
 .input-group.actions {
@@ -331,8 +323,8 @@ input {
 .btnTheme {
   position: absolute;
   right: 2rem;
-  top: 3rem; 
-  cursor: pointer; 
+  top: 3rem;
+  cursor: pointer;
 }
 
 input {
@@ -340,35 +332,28 @@ input {
 }
 
 .darkmodal {
-
   background-color: #080808;
   color: #ffffff;
 }
 
-.dark-theme
- {
-  background-color: #0D1117;
-   
+.dark-theme {
+  background-color: #0d1117;
 }
 
 .dark-header,
 .darkfooter {
-  
-  background-color: #06090F;
+  background-color: #06090f;
 }
 .yellowSun {
   color: rgb(243, 243, 78);
 }
-.whiteMoon { 
+.whiteMoon {
   color: #e6e6d7;
 }
-
-
 
 /* -----------responsividade----------------- */
 
 @media (min-width: 768px) {
-
   html {
     font-size: 87.5%;
   }
@@ -378,16 +363,18 @@ input {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
-
 }
 
 @media (max-width: 650px) {
-  
-  
   .centerImage {
-  width: 100%;
-  padding: 2rem;
-  
-}
+    width: 100%;
+    padding: 2rem;
+  }
 
+  .btnTheme {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+  }
+  
 }
