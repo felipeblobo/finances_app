@@ -115,7 +115,10 @@ const Utilities = {
   },
 
   formatAmount(value) {
-    return value = Number(value) * 100
+
+
+    value = Number(value) * 100
+    return Math.round(value)
   },
 
   formatCurrency(value) {
