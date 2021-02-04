@@ -14,6 +14,15 @@ html {
   font-size: 93.75%;
 }
 
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #8D4EFF;
+  border-radius: 0.2rem;
+}
+
 
 body {
   background: #f0f2f5;
