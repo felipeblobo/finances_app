@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 html {
@@ -38,7 +37,7 @@ body {
 h1 {
   font-size: 3rem;
 }
-h2 {
+.h2 {
   margin-top: 3.2rem;
   margin-bottom: 0.8rem;
   color: var(--dark-color);
@@ -89,46 +88,27 @@ a:hover {
   background: #3dd705;
 }
 
-/* .button.cancel {
-  width: 100%;
-  height: 50px;
-  color: #e92929;
-  border: 2px #e92929 solid;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.5;
-}
-
-.button.cancel:hover {
-  background: #e92929;
-  color: white;
-  opacity: 0.8;
-} */
-
 .button.cancel {
   line-height: 50px;
   height: 50px;
   text-align: center;
   width: 250px;
   cursor: pointer;
-  color: #FFF;
+  color: #fff;
   transition: all 0.5s;
-  position: relative; 
-  
+  position: relative;
 }
 
 .button.cancel span {
-  z-index: 2; 
+  z-index: 2;
   display: block;
   position: absolute;
   width: 100%;
-  height: 100%; 
+  height: 100%;
 }
+
 .button.cancel::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -137,12 +117,13 @@ a:hover {
   z-index: 1;
   transition: all 0.5s;
   border: 1px solid #e929299b;
-  background-color:#e92929a6;
+  background-color: #e92929a6;
   border: 2px #e92929 solid;
   border-radius: 0.25rem;
 }
+
 .button.cancel::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -151,18 +132,19 @@ a:hover {
   z-index: 1;
   transition: all 0.5s;
   border: 1px solid #e929299b;
-  background-color:#e92929a6;
+  background-color: #e92929a6;
   border: 2px #e92929 solid;
   border-radius: 0.25rem;
 }
+
 .button.cancel:hover::before {
   transform: rotate(-45deg);
-  background-color:#e41111;
+  background-color: #e41111;
 }
+
 .button.cancel:hover::after {
   transform: rotate(45deg);
-  background-color:#e41111;
-  
+  background-color: #e41111;
 }
 
 /* -----------header----------------- */
@@ -211,13 +193,12 @@ header {
   font-size: 2rem;
   line-height: 3rem;
   margin-top: 1rem;
-  padding: 0 0 0 0.5rem;  
+  padding: 0 0 0 0.5rem;
 }
 
 .card.total {
   background-color: #49aa26;
   color: #fff;
-  
 }
 
 /* -----------imagens----------------- */
@@ -355,13 +336,14 @@ input {
 }
 
 #amount {
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 
 .input-group.actions {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 3rem;
 }
 
 .input-group.actions .button,
@@ -391,9 +373,13 @@ input {
   background-color: #c5c5c5;
 }
 
+.darkTitle {
+  color: #4716a1;
+}
+
 .darkmodal {
   background-color: #0a0a0a;
-  color: #ddd7d7;
+  color: #8d4eff;
 }
 
 .dark-theme {
@@ -411,7 +397,6 @@ input {
   color: #e6e6d7;
 }
 
-
 @media (max-width: 650px) {
   .centerImage {
     width: 100%;
@@ -423,5 +408,4 @@ input {
     right: 2rem;
     top: 1rem;
   }
-  
 }

@@ -4,6 +4,7 @@ const header = document.querySelector('header');
 const imgMode = document.querySelector('#imgMode');
 const footer = document.querySelector('.footer');
 const modal = document.querySelector('.modal');
+const formTitle = document.querySelector('.h2');
 
 // Listen for a click on the button
 const darkMode = btn.addEventListener('click', function() {
@@ -12,6 +13,7 @@ const darkMode = btn.addEventListener('click', function() {
   header.classList.toggle('dark-header');
   footer.classList.toggle('darkfooter'); 
   modal.classList.toggle('darkmodal');
+  formTitle.classList.toggle('darkTitle');
 
   //dark or light symbol
   imgMode.classList.toggle('fa-moon');
