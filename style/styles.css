@@ -280,6 +280,10 @@ td.description {
   color: var(--dark-color);
 }
 
+td.date {
+  color:#e6e8eb;
+
+}
 td.income {
   color: #12a454;
 }
