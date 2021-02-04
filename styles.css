@@ -319,11 +319,13 @@ footer {
 
 /* -----------theme----------------- */
 
-#btnTheme {
+.btnTheme {
   position: absolute;
-  right: 1rem;
-  top: 1rem;  
+  right: 2rem;
+  top: 3rem; 
+  cursor: pointer; 
 }
+
 
 .dark-theme {
 

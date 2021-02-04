@@ -1,5 +1,5 @@
 // Select the button
-const btn = document.querySelector('#btnTheme');
+const btn = document.querySelector('.btnTheme');
 const header = document.querySelector('header');
 
 // Listen for a click on the button
