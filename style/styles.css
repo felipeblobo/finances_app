@@ -90,6 +90,7 @@ a:hover {
 
 .button.cancel {
   line-height: 50px;
+  padding: 0;
   height: 50px;
   text-align: center;
   width: 250px;
@@ -116,9 +117,9 @@ a:hover {
   height: 100%;
   z-index: 1;
   transition: all 0.5s;
-  border: 1px solid #e929299b;
+
   background-color: #e92929a6;
-  border: 2px #e92929 solid;
+  
   border-radius: 0.25rem;
 }
 
@@ -131,9 +132,8 @@ a:hover {
   height: 100%;
   z-index: 1;
   transition: all 0.5s;
-  border: 1px solid #e929299b;
   background-color: #e92929a6;
-  border: 2px #e92929 solid;
+
   border-radius: 0.25rem;
 }
 
