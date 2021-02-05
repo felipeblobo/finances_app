@@ -20,7 +20,7 @@ const Storage = {
   }
 };
 
-//global values
+//Global values
 
 const Transaction = {
   all: Storage.get(),

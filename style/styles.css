@@ -354,13 +354,21 @@ input {
 }
 
 /* -----------footer----------------- */
-.footer {
-  text-align: center;
-  padding: 1rem 0 1rem;
-  color: #fff;
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 80%;
+  padding: 1rem 1rem .4rem 1rem;
+  color: rgb(236, 232, 232);
   opacity: 0.6rem;
   background-color: #2d4a22;
+
 }
+
+.git {
+  margin-right: .5rem;
+}
+
 
 /* -----------theme----------------- */
 
@@ -409,5 +417,9 @@ input {
     position: absolute;
     right: 2rem;
     top: 1rem;
+  }
+
+  footer {
+    font-size: 50%;
   }
 }
