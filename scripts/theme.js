@@ -2,7 +2,7 @@
 const btn = document.querySelector('.btnTheme');
 const header = document.querySelector('header');
 const imgMode = document.querySelector('#imgMode');
-const footer = document.querySelector('.footer');
+const footer = document.querySelector('footer');
 const modal = document.querySelector('.modal');
 const formTitle = document.querySelector('.h2');
 
