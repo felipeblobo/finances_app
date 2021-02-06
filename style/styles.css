@@ -1,6 +1,6 @@
 /* -----------Global----------------- */
 :root {
-  --dark-color: #363f5f;
+  --darkColor: #363f5f;
   --green: #49aa26;
   --kindPurple: #8d4eff;
   --whiteBody: #f0f2f5;
@@ -55,7 +55,7 @@ h1 {
 .h2 {
   margin-top: 3.2rem;
   margin-bottom: 0.8rem;
-  color: var(--dark-color);
+  color: var(--darkColor);
   font-weight: normal;
 }
 
@@ -193,7 +193,7 @@ header {
   padding: 1.5rem 2 rem;
   border-radius: 0.25rem;
   margin-bottom: 2rem;
-  color: var(--dark-color);
+  color: var(--darkColor);
   display: flex;
   justify-content: space-between;
   overflow: auto;
@@ -293,7 +293,7 @@ table td {
 
 td.description,
 td.date {
-  color: var(--dark-color);
+  color: var(--darkColor);
 }
 
 td.income {
@@ -396,11 +396,11 @@ input {
   background-color: var(--inputColor);
 }
 
-.darkTitle {
+.dark-Title {
   color: var(--darkTitle);
 }
 
-.darkmodal {
+.dark-modal {
   background-color: var(--darkModal);
   color: var(--kindPurple);
 }
@@ -410,7 +410,7 @@ input {
 }
 
 .dark-header,
-.darkfooter {
+.dark-footer {
   background-color: var(--darkModal);
 }
 .yellowSun {
@@ -419,6 +419,8 @@ input {
 .whiteMoon {
   color: var(--whiteVariation);
 }
+
+/* -----------media query----------------- */
 
 @media (max-width: 650px) {
   .centerImage {
