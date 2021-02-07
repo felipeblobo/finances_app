@@ -215,6 +215,11 @@ header {
   background-color: var(--green);
   color: white;
 }
+.redCard {
+  background: var(--expenseColor) !important;
+  color: white;
+
+}
 
 .imgCard {
   display: flex;
@@ -386,7 +391,6 @@ footer {
 }
 
 /* -----------theme----------------- */
-
 .btnTheme {
   position: absolute;
   right: 2rem;

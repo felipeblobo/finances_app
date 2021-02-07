@@ -7,6 +7,20 @@ const Modal = {
   },
 };
 
+
+const changeColorCard = {
+  
+  colorCard() {
+  const cardTotal = document.querySelector('.card.total');
+  
+  if (Transaction.total() < 0) {
+  cardTotal.classList.add('redCard') 
+  
+  } else {
+  cardTotal.classList.remove('redCard')
+  }
+  } }
+
 //Armazenamento
 
 const Storage = {
@@ -24,6 +38,7 @@ const Storage = {
 
 const Transaction = {
   all: Storage.get(),
+ 
   
   add(transaction) {
     Transaction.all.push(transaction);
@@ -67,9 +82,10 @@ const DOM = {
 
   addTransaction(transaction, index) {
     const tr = document.createElement("tr");
+    tr.dataset = index;
     tr.innerHTML = DOM.innerHTMLTransaction(transaction, index);
-    tr.dataset.index = index;
-    DOM.transactionsContainer.appendChild(tr);
+    
+    DOM.transactionsContainer.appendChild(tr);  
   },
 
   innerHTMLTransaction(transaction, index) {
@@ -78,7 +94,7 @@ const DOM = {
     const amount = Utilities.formatCurrency(transaction.amount);
 
     const html = `
-        
+                
                 <td class="description">${transaction.description}</td>
                 <td class=${CSSclass}>${amount}</td>
                 <td class="date">${transaction.date}</td>
@@ -206,20 +222,22 @@ const Form = {
 const App = {
   
   init() {
-    Transaction.all.forEach(transaction => {
-        DOM.addTransaction(transaction);
+    Transaction.all.forEach((transaction, index) => {
+        DOM.addTransaction(transaction, index);
+        
     })
       
-    DOM.updateBalance();
-
+    DOM.updateBalance()
+    changeColorCard.colorCard();
     Storage.set(Transaction.all)
   },
 
   reload() {
       DOM.clearTransactions();
-      App.init()
+      App.init();
   },
 };
+
 
 App.init();
 
