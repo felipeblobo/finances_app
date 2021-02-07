@@ -1,15 +1,15 @@
 /* -----------Global----------------- */
 :root {
   --darkColor: #363f5f;
-  --green: #49aa26;
-  --kindPurple: #8d4eff;
-  --whiteBody: #f0f2f5;
-  --hoverGreen: #3dd705;
+  --green: #508264;
+  --kindPurple: #C0A4B5;
+  --whiteBody: #F2EBED;
+  --hoverGreen: #45A764;
   --cancelColor: #e92929a6;
   --hoverRed: #e41111;
-  --strongGreen: #2d4a22;
+  --strongGreen: #435947;
   --whiteVariation: #f2f2f2;
-  --incomeColor: #12a454;
+  --incomeColor: #276A39;
   --expenseColor: #e92929;
   --modalColor: #f0f2f5;
   --inputColor: #c5c5c5;
@@ -179,7 +179,7 @@ header {
 /* -----------balance----------------- */
 
 #balance {
-  margin-top: -4rem;
+  margin-top: -5rem;
 }
 
 #balance h2 {
@@ -190,11 +190,10 @@ header {
 /* -----------cards----------------- */
 .card {
   background: white;
-  padding: 1.5rem 2 rem;
+  padding: 2rem;
   border-radius: 0.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: var(--darkColor);
-  display: flex;
   justify-content: space-between;
   overflow: auto;
 }
@@ -202,7 +201,7 @@ header {
 .card h3 {
   font-weight: normal;
   font-size: 1rem;
-  padding: 0 0 0 0.5rem;
+  padding: .5rem 0 0 .5rem;
 }
 
 .card p {
@@ -215,6 +214,11 @@ header {
 .card.total {
   background-color: var(--green);
   color: white;
+}
+
+.imgCard {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* -----------imagens----------------- */
@@ -231,10 +235,7 @@ td img {
 }
 
 .icone {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 1rem;
+    margin: .2rem .5rem 0 0;
 }
 
 .divImgCenter {
@@ -280,7 +281,7 @@ table th {
 }
 
 table tr {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 table tr:hover {
   opacity: 1;
@@ -322,6 +323,7 @@ td.expense {
   opacity: 1;
   visibility: visible;
 }
+
 .modal {
   background: var(--modalColor);
   padding: 2.4rem;
@@ -436,5 +438,18 @@ input {
 
   footer {
     font-size: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 87.5%;
+    /*14px*/
+  }
+
+  #balance {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
   }
 }
