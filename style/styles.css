@@ -283,6 +283,7 @@ table th {
   font-weight: 600;
   padding: 1rem 2rem;
   text-align: left;
+  color: var(--darkModal);
 }
 
 table tr {
