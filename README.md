@@ -2,6 +2,10 @@
  Finança$ $imples
 </h1></a>
 
+## Projeto
+
+O Finanças Simples é uma aplicação de controle financeiro, onde é possível cadastrar e excluir transações e ver o saldo de entrada e saída.
+
 ## Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -10,10 +14,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
 - JavaScript
 
-## Projeto
-
-O Finanças Simples é uma aplicação de controle financeiro, onde é possível cadastrar e excluir transações e ver o saldo de entrada e saída.
-
 ## Informações
 
-Esse projeto foi construído durante a Maratona da Rocketseat em Janeiro de 2021.
+Esse projeto foi construído durante a Maratona Discover da Rocketseat em Janeiro de 2021.
+
+## Funcionalidades Adicionais
+
+Além das funcionalidades previstas no projeto delineado pela Rocket, implementei o Modo Noturno e Alteração da cor do Card Total a depender do saldo.
