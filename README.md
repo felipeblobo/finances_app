@@ -6,6 +6,9 @@
 
 O Finanças Simples é uma aplicação de controle financeiro, onde é possível cadastrar e excluir transações e ver o saldo de entrada e saída.
 
+<div align="center"><img  width="100%" src="https://j.gifs.com/2xjKLM.gif"></div>
+
+
 ## Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
