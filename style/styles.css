@@ -14,7 +14,7 @@
   --modalColor: #f0f2f5;
   --inputColor: #c5c5c5;
   --darkTitle: #e9e8ec;
-  --darkModal: #06090f;
+  --darkModal: #151a22;
   --darkTheme: #0d1117;
   --yellow: #f3f34e;
 }
@@ -403,13 +403,15 @@ input {
   background-color: var(--inputColor);
 }
 
-.dark-Title {
-  color: var(--darkTitle);
+.darkTitle {
+  color: #858181;
 }
 
 .dark-modal {
   background-color: var(--darkModal);
   color: var(--kindPurple);
+  border: 1px solid #858181;
+
 }
 
 .dark-theme {
