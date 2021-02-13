@@ -46,8 +46,7 @@ const Transaction = {
     App.reload();
   },
   
-
-  edit(index) {
+  edit(index, transaction) {
     Modal.openClose();   
       
     const descriptionText = Transaction.all[index].description;
@@ -57,15 +56,12 @@ const Transaction = {
     document.getElementById("description").value = descriptionText;
     document.getElementById("amount").value = Utilities.reformatAmount(amountText);
     document.getElementById("date").value = Utilities.reformatDate(dateText);
-
-    const button = document.getElementById("savebtn");
-
-    button.addEventListener('click', () => {
-      Transaction.all.splice(index, 1);
-      });   
-  
-    App.reload();
     
+    var el = document.getElementById('savebtn');
+
+    el.onclick = function () {
+      Transaction.all.splice(index, 1);
+    }
   },
 
   incomes() {
@@ -267,24 +263,3 @@ const App = {
 App.init();
 
 
-//searching data between date
-
-// }
-
-// const searchDate = {
-//   firstDate: document.querySelector("input#firstDate").value.split('-'),
-//   lastDate: document.querySelector("input#lastDate").value.split('-'),
-
-//   search() {
-//     for (let i = 0; i < Transaction.all.length; i++) {
-//       if (Transaction.all[i].date < lastDate) {
-//         console.log("oi");
-//       } else {
-//         console.log('olá')
-//       }
-//     }
-//   },
-// };
-
-
-// searchDate.search();
