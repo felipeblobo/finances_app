@@ -60,7 +60,7 @@ const Transaction = {
 
     const button = document.getElementById("savebtn");
 
-    button.addEventListener('click', event => {
+    button.addEventListener('click', () => {
       Transaction.all.splice(index, 1);
       });   
   
