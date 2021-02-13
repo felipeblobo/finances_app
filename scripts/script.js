@@ -45,15 +45,27 @@ const Transaction = {
     Transaction.all.splice(index, 1);
     App.reload();
   },
+  
 
   edit(index) {
-    Modal.openClose();
+    Modal.openClose();   
+      
     const descriptionText = Transaction.all[index].description;
     const amountText = Transaction.all[index].amount;
-    const dateText = Transaction.all[index].date
+    const dateText = Transaction.all[index].date; 
+    
     document.getElementById("description").value = descriptionText;
     document.getElementById("amount").value = Utilities.reformatAmount(amountText);
     document.getElementById("date").value = Utilities.reformatDate(dateText);
+
+    const button = document.getElementById("savebtn");
+
+    button.addEventListener('click', event => {
+      Transaction.all.splice(index, 1);
+      });   
+  
+    App.reload();
+    
   },
 
   incomes() {
