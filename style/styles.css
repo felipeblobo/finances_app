@@ -17,6 +17,7 @@
   --darkModal: #151a22;
   --darkTheme: #0d1117;
   --yellow: #f3f34e;
+  --edit: #6C63FF;
 }
 
 * {
@@ -309,6 +310,15 @@ td.income {
 
 td.expense {
   color: var(--expenseColor);
+}
+
+.smallerColumn {
+  width: 5%;
+}
+
+.fa-pencil-alt {
+  color: var(--edit);
+  cursor: pointer;
 }
 
 /* -----------modal----------------- */

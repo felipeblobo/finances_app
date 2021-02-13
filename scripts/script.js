@@ -52,7 +52,7 @@ const Transaction = {
     const amountText = Transaction.all[index].amount;
     const dateText = Transaction.all[index].date
     document.getElementById("description").value = descriptionText;
-    document.getElementById("amount").value = Utilities.formatAmount(amountText);
+    document.getElementById("amount").value = Utilities.reformatAmount(amountText);
     document.getElementById("date").value = Utilities.reformatDate(dateText);
   },
 
@@ -106,6 +106,9 @@ const DOM = {
                 <td class="date">${transaction.date}</td>
                 <td>
                   <img onclick='Transaction.remove(${index})' src="./images/assets/minus.svg" alt="imagem de menos" />
+                </td>
+                <td>
+                  <i onclick='Transaction.edit(${index})' class="fas fa-pencil-alt fa-2x"></i>
                 </td>
              
         `;
