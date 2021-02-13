@@ -46,6 +46,16 @@ const Transaction = {
     App.reload();
   },
 
+  edit(index) {
+    Modal.openClose();
+    const descriptionText = Transaction.all[index].description;
+    const amountText = Transaction.all[index].amount;
+    const dateText = Transaction.all[index].date
+    document.getElementById("description").value = descriptionText;
+    document.getElementById("amount").value = Utilities.formatAmount(amountText);
+    document.getElementById("date").value = Utilities.reformatDate(dateText);
+  },
+
   incomes() {
     let income = 0;
     Transaction.all.forEach((transaction) => {
@@ -125,9 +135,19 @@ const Utilities = {
     return `${splittedDate[2]}/${splittedDate[1]}/${splittedDate[0]}`;
   },
 
+  reformatDate(dateText) {
+    const splittedDate = dateText.split("/");
+    return `${splittedDate[2]}-${splittedDate[1]}-${splittedDate[0]}`;
+  },
+
   formatAmount(value) {
     value = Number(value) * 100;
     return Math.round(value);
+  },
+
+  reformatAmount(amountText) {
+    amountText = Number(amountText) / 100;
+    return Math.round(amountText);
   },
 
   formatCurrency(value) {
