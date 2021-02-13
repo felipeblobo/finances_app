@@ -45,6 +45,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
 .container {
   width: min(90vw, 800px);
   margin: auto;
@@ -390,6 +395,9 @@ input {
 
 /* -----------footer----------------- */
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   font-size: 80%;

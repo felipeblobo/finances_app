@@ -16,134 +16,138 @@
     />
   </head>
   <body>
-    <header>
-      <div>
-        <h1 id="logo">Finança$ $imples</h1>
-      </div>
-
-      <div class="btnTheme">
-        <i id="dayNight" class="whiteMoon fas fa-moon fa-2x"></i>
-      </div>
-    </header>
-
-    <main class="container">
-      <div class="mainData">
-        <section id="balance">
-          <h2 class="sr-only">Balanço</h2>
-
-          <div class="card">
-            <div class='imgCard'>
-              <h3>Entradas</h3>
-              <img class='icone' src="./images/income.svg" alt="imagem de entradas" />
+    <div class="page-container">
+      <header>
+        <div>
+          <h1 id="logo">Finança$ $imples</h1>
+        </div>
+  
+        <div class="btnTheme">
+          <i id="dayNight" class="whiteMoon fas fa-moon fa-2x"></i>
+        </div>
+      </header>
+  
+      <main class="container">
+        <div class="mainData">
+          <section id="balance">
+            <h2 class="sr-only">Balanço</h2>
+  
+            <div class="card">
+              <div class='imgCard'>
+                <h3>Entradas</h3>
+                <img class='icone' src="./images/income.svg" alt="imagem de entradas" />
+              </div>
+                <p id="incomeDisplay"></p>           
             </div>
-              <p id="incomeDisplay"></p>           
+            <div class="card">
+              <div class='imgCard'>
+                <h3>Saídas</h3>
+                <img class='icone' src="./images/expense.svg" alt="imagem de saídas" />
+              </div>
+              <p id="expenseDisplay"></p>          
+            </div>
+            <div class="card total">
+              <div class='imgCard'>
+                <h3>Saldo</h3>
+                <img class='icone' src="./images/assets/total.svg" alt="total" />
+              </div>
+              <p id="totalDisplay"></p>          
+            </div>
+          </section>
+          <section id="transactions">
+            <h2 class="sr-only">Transações</h2>
+            <a onclick="Modal.openClose()" href="#" class="button new"
+              >+ Nova Transação</a
+            >
+  
+            <table id="data-table">
+              <thead>
+                <tr>
+                  <th>Descrição</th>
+                  <th>Valor</th>
+                  <th>Data</th>
+                  <th class='smallerColumn'></th>
+                  <th class='smallerColumn'></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </section>
+        </div>
+  
+        <div class="divImgCenter">
+          <img class="centerImage" src="./images/painel.svg" alt="painel" />
+        </div>
+      </main>
+  
+      <div class="modal-overlay">
+        <div class="modal">
+          <div id="form">
+            <h2 class="h2">Nova Transação</h2>
+            <form action="" onsubmit="Form.submit(event)">
+              <div class="input-group">
+                <label class="sr-only" for="description">Descrição</label>
+                <input
+                  type="text"
+                  id="description"
+                  name="description"
+                  placeholder="Descrição"
+                />
+              </div>
+  
+              <div class="input-group">
+                <label class="sr-only" for="amount">Valor</label>
+                <input
+                  step="0.01"
+                  type="number"
+                  id="amount"
+                  name="amount"
+                  placeholder="0,00"
+                />
+                <small class="help-info"
+                  >Use o sinal - (negativo) para despesas e o sinal , (vírgula)
+                  para casas decimais.</small
+                >
+              </div>
+  
+              <div class="input-group">
+                <label class="sr-only" for="date">Descrição</label>
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  placeholder="01/01/2021"
+                  max="2999-01-01"
+                />
+              </div>
+  
+              <div class="input-group actions">
+                <a onclick="Modal.openClose()" href="#" class="button cancel"
+                  ><span>Cancelar</span></a>
+                <button id="savebtn">Salvar</button>
+                              
+              </div>
+            </form>
           </div>
-          <div class="card">
-            <div class='imgCard'>
-              <h3>Saídas</h3>
-              <img class='icone' src="./images/expense.svg" alt="imagem de saídas" />
-            </div>
-            <p id="expenseDisplay"></p>          
-          </div>
-          <div class="card total">
-            <div class='imgCard'>
-              <h3>Saldo</h3>
-              <img class='icone' src="./images/assets/total.svg" alt="total" />
-            </div>
-            <p id="totalDisplay"></p>          
-          </div>
-        </section>
-        <section id="transactions">
-          <h2 class="sr-only">Transações</h2>
-          <a onclick="Modal.openClose()" href="#" class="button new"
-            >+ Nova Transação</a
-          >
-
-          <table id="data-table">
-            <thead>
-              <tr>
-                <th>Descrição</th>
-                <th>Valor</th>
-                <th>Data</th>
-                <th class='smallerColumn'></th>
-                <th class='smallerColumn'></th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </section>
-      </div>
-
-      <div class="divImgCenter">
-        <img class="centerImage" src="./images/painel.svg" alt="painel" />
-      </div>
-    </main>
-
-    <div class="modal-overlay">
-      <div class="modal">
-        <div id="form">
-          <h2 class="h2">Nova Transação</h2>
-          <form action="" onsubmit="Form.submit(event)">
-            <div class="input-group">
-              <label class="sr-only" for="description">Descrição</label>
-              <input
-                type="text"
-                id="description"
-                name="description"
-                placeholder="Descrição"
-              />
-            </div>
-
-            <div class="input-group">
-              <label class="sr-only" for="amount">Valor</label>
-              <input
-                step="0.01"
-                type="number"
-                id="amount"
-                name="amount"
-                placeholder="0,00"
-              />
-              <small class="help-info"
-                >Use o sinal - (negativo) para despesas e o sinal , (vírgula)
-                para casas decimais.</small
-              >
-            </div>
-
-            <div class="input-group">
-              <label class="sr-only" for="date">Descrição</label>
-              <input
-                type="date"
-                id="date"
-                name="date"
-                placeholder="01/01/2021"
-                max="2999-01-01"
-              />
-            </div>
-
-            <div class="input-group actions">
-              <a onclick="Modal.openClose()" href="#" class="button cancel"
-                ><span>Cancelar</span></a>
-              <button id="savebtn">Salvar</button>
-                            
-            </div>
-          </form>
         </div>
       </div>
+  
+      <footer>
+        <div class='genericText'>
+          Alguns direitos reservados.
+        </div>
+          <div class= 'socialMedia'>
+              <a class='git' href="https://github.com/felipeblobo"><i class="fab fa-github-square fa-2x me-2"  style="color:#987dcad0;"></i></a>
+              <a href="https://www.linkedin.com/in/felipelobo23/"><i class="fab fa-linkedin fa-2x" style="color:#987dcad0;"></i></a>
+          </div>
+          <div class= 'city'>
+            Salvador, Bahia.
+          </div>   
+        
+      </footer>
+
     </div>
-
-    <footer>
-      <div class='genericText'>
-        Alguns direitos reservados.
-      </div>
-        <div class= 'socialMedia'>
-            <a class='git' href="https://github.com/felipeblobo"><i class="fab fa-github-square fa-2x me-2"  style="color:#987dcad0;"></i></a>
-            <a href="https://www.linkedin.com/in/felipelobo23/"><i class="fab fa-linkedin fa-2x" style="color:#987dcad0;"></i></a>
-        </div>
-        <div class= 'city'>
-          Salvador, Bahia.
-        </div>   
-      
-    </footer>
+    
 
     <script type="text/javascript" src="./scripts/script.js"></script>
     <script type="text/javascript" src="./scripts/theme.js"></script>
