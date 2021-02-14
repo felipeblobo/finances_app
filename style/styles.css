@@ -2,14 +2,14 @@
 :root {
   --darkColor: #363f5f;
   --green: #508264;
-  --kindPurple: #C0A4B5;
-  --whiteBody: #F2EBED;
-  --hoverGreen: #45A764;
+  --kindPurple: #c0a4b5;
+  --whiteBody: #f2ebed;
+  --hoverGreen: #45a764;
   --cancelColor: #e92929a6;
   --hoverRed: #e41111;
   --strongGreen: #435947;
   --whiteVariation: #f2f2f2;
-  --incomeColor: #276A39;
+  --incomeColor: #276a39;
   --expenseColor: #e92929;
   --modalColor: #f0f2f5;
   --inputColor: #c5c5c5;
@@ -17,9 +17,8 @@
   --darkModal: #0d1117;
   --darkTheme: #151a22;
   --yellow: #f3f34e;
-  --edit: #6C63FF;
+  --edit: #6c63ff;
   --greenTitle: #4ae47b;
-
 }
 
 * {
@@ -106,7 +105,6 @@ a:hover {
   border-radius: 0.25rem;
   cursor: pointer;
   font-size: 1rem;
-  
 }
 
 #saveBtn:hover {
@@ -160,24 +158,21 @@ a:hover {
 }
 
 .button.cancel:hover::before {
-  display:flex;
+  display: flex;
   transform: rotate(-45deg);
   background-color: var(--hoverRed);
   width: 70%;
   height: 70%;
-  margin: .8rem;
- 
-  
+  margin: 0.8rem;
 }
 
 .button.cancel:hover::after {
-  display:flex;
+  display: flex;
   transform: rotate(45deg);
   background-color: var(--hoverRed);
   width: 70%;
   height: 70%;
-  margin: .8rem;
- 
+  margin: 0.8rem;
 }
 
 /* -----------header----------------- */
@@ -195,9 +190,8 @@ header {
 
 .greenTitle {
   color: var(--greenTitle);
-  font-weight:300;
+  font-weight: 300;
 }
-
 
 /* -----------balance----------------- */
 
@@ -224,7 +218,7 @@ header {
 .card h3 {
   font-weight: normal;
   font-size: 1rem;
-  padding: .5rem 0 0 .5rem;
+  padding: 0.5rem 0 0 0.5rem;
 }
 
 .card p {
@@ -248,7 +242,7 @@ header {
   justify-content: space-between;
 }
 
-/* -----------imagens----------------- */
+/* -----------images----------------- */
 #logoImage {
   width: 7%;
 }
@@ -262,7 +256,7 @@ td img {
 }
 
 .icone {
-    margin: .2rem .5rem 0 0;
+  margin: 0.2rem 0.5rem 0 0;
 }
 
 .divImgCenter {
@@ -365,7 +359,7 @@ td.expense {
   background: var(--modalColor);
   padding: 2.4rem;
   position: relative;
-  display:flex;
+  display: flex;
   width: 80%;
   max-width: 500px;
   border: 0.2rem solid var(--hoverGreen);
@@ -427,7 +421,7 @@ footer {
   margin-right: 0.5rem;
 }
 
-/* -----------theme----------------- */
+/* -----------darkTheme----------------- */
 .btnTheme {
   position: absolute;
   right: 2rem;
@@ -445,42 +439,39 @@ input {
 
 .darkModalOverlay {
   background-color: rgba(0, 0, 0, 0.95);
-
 }
 
 .darkModal {
   background-color: var(--darkModal);
   color: var(--whiteVariation);
- }
+}
 
 .darkModal::before {
-  content:'';
-  position:absolute;
-  top: -.4rem;
-  bottom: -.4rem;
-  left: -.4rem;
-  right: -.4rem;
-  background:#fff ;
+  content: "";
+  position: absolute;
+  top: -0.4rem;
+  bottom: -0.4rem;
+  left: -0.4rem;
+  right: -0.4rem;
+  background: #fff;
   z-index: -2;
   filter: blur(40px);
-
 }
 
 .darkModal::after {
-  content:'';
-  position:absolute;
-  top: -.4rem;
-  bottom: -.4rem;
-  left: -.4rem;
-  right: -.4rem;
-  background:#fff;
+  content: "";
+  position: absolute;
+  top: -0.4rem;
+  bottom: -0.4rem;
+  left: -0.4rem;
+  right: -0.4rem;
+  background: #fff;
   z-index: -1;
 }
 
-
 .darkModal::before,
 .darkModal::after {
-  background: linear-gradient(60deg, #446e50, #060c21, #45A764) !important;
+  background: linear-gradient(60deg, #446e50, #060c21, #45a764) !important;
 }
 
 .darkTheme {

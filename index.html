@@ -19,67 +19,80 @@
     <div class="pageContainer">
       <header>
         <div>
-          <h1 id="logo">Finança<span class='greenTitle'>$</span> <span class='greenTitle'>$</span>imples</h1>
+          <h1 id="logo">
+            Finança<span class="greenTitle">$</span>
+            <span class="greenTitle">$</span>imples
+          </h1>
         </div>
-  
+
         <div class="btnTheme">
           <i id="dayNight" class="whiteMoon fas fa-moon fa-2x"></i>
         </div>
       </header>
-  
       <main class="container">
         <div class="mainData">
           <section id="balance">
             <h2 class="sr-only">Balanço</h2>
-  
+
             <div class="card">
-              <div class='imgCard'>
+              <div class="imgCard">
                 <h3>Entradas</h3>
-                <img class='icone' src="./images/income.svg" alt="imagem de entradas" />
+                <img
+                  class="icone"
+                  src="./images/income.svg"
+                  alt="imagem de entradas"
+                />
               </div>
-                <p id="incomeDisplay"></p>           
+              <p id="incomeDisplay"></p>
             </div>
             <div class="card">
-              <div class='imgCard'>
+              <div class="imgCard">
                 <h3>Saídas</h3>
-                <img class='icone' src="./images/expense.svg" alt="imagem de saídas" />
+                <img
+                  class="icone"
+                  src="./images/expense.svg"
+                  alt="imagem de saídas"
+                />
               </div>
-              <p id="expenseDisplay"></p>          
+              <p id="expenseDisplay"></p>
             </div>
             <div class="card total">
-              <div class='imgCard'>
+              <div class="imgCard">
                 <h3>Saldo</h3>
-                <img class='icone' src="./images/assets/total.svg" alt="total" />
+                <img
+                  class="icone"
+                  src="./images/assets/total.svg"
+                  alt="total"
+                />
               </div>
-              <p id="totalDisplay"></p>          
+              <p id="totalDisplay"></p>
             </div>
           </section>
           <section id="transactions">
             <h2 class="sr-only">Transações</h2>
             <a onclick="Modal.openClose()" href="#" class="buttonNew"
-              >+ Nova Transação</a
-            >
-  
+              >+ Nova Transação</a>
+
             <table id="dataTable">
               <thead>
                 <tr>
                   <th>Descrição</th>
                   <th>Valor</th>
                   <th>Data</th>
-                  <th class='smallerColumn'></th>
-                  <th class='smallerColumn'></th>
+                  <th class="smallerColumn"></th>
+                  <th class="smallerColumn"></th>
                 </tr>
               </thead>
               <tbody></tbody>
             </table>
           </section>
         </div>
-  
+
         <div class="divImgCenter">
           <img class="centerImage" src="./images/painel.svg" alt="painel" />
         </div>
       </main>
-  
+
       <div class="modalOverlay">
         <div class="modal">
           <div id="form">
@@ -94,7 +107,7 @@
                   placeholder="Descrição"
                 />
               </div>
-  
+
               <div class="inputGroup">
                 <label class="sr-only" for="amount">Valor</label>
                 <input
@@ -109,7 +122,7 @@
                   para casas decimais.</small
                 >
               </div>
-  
+
               <div class="inputGroup">
                 <label class="sr-only" for="date">Descrição</label>
                 <input
@@ -120,39 +133,35 @@
                   max="2999-01-01"
                 />
               </div>
-  
+
               <div class="inputGroup actions">
                 <a onclick="Modal.openClose()" href="#" class="button cancel"
-                  ><span id='cancelButton'>Cancelar</span></a>
+                  ><span id="cancelButton">Cancelar</span></a
+                >
                 <button id="saveBtn">Salvar</button>
-                              
               </div>
             </form>
           </div>
         </div>
       </div>
-  
-      <footer>
-        <div class='genericText'>
-          Alguns direitos reservados.
-        </div>
-          <div class='socialMedia'>
-              <a class='git' href="https://github.com/felipeblobo"><i class="fab fa-github-square fa-2x me-2"  style="color:#987dcad0;"></i></a>
-              <a href="https://www.linkedin.com/in/felipelobo23/"><i class="fab fa-linkedin fa-2x" style="color:#987dcad0;"></i></a>
-          </div>
-          <div class='city'>
-            Salvador, Bahia.
-          </div>   
-        
-      </footer>
 
+      <footer>
+        <div class="genericText">Alguns direitos reservados.</div>
+        <div class="socialMedia">
+          <a class="git" href="https://github.com/felipeblobo"
+            ><i
+              class="fab fa-github-square fa-2x me-2"
+              style="color: #987dcad0"
+            ></i
+          ></a>
+          <a href="https://www.linkedin.com/in/felipelobo23/"
+            ><i class="fab fa-linkedin fa-2x" style="color: #987dcad0"></i
+          ></a>
+        </div>
+        <div class="city">Salvador, Bahia.</div>
+      </footer>
     </div>
-    
 
     <script type="text/javascript" src="./scripts/script.js"></script>
-    <script type="text/javascript" src="./scripts/theme.js"></script>
-
   </body>
 </html>
-
-        
