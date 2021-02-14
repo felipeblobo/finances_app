@@ -142,6 +142,7 @@ a:hover {
   height: 100%;
   z-index: 1;
   transition: all 0.5s;
+  
 
   background-color: var(--cancelColor);
 
@@ -158,18 +159,26 @@ a:hover {
   z-index: 1;
   transition: all 0.5s;
   background-color: var(--cancelColor);
-
   border-radius: 0.25rem;
 }
 
 .button.cancel:hover::before {
+  display:flex;
   transform: rotate(-45deg);
   background-color: var(--hoverRed);
+  width: 70%;
+  height: 70%;
+
+  
 }
 
 .button.cancel:hover::after {
+  display:flex;
   transform: rotate(45deg);
   background-color: var(--hoverRed);
+  width: 70%;
+  height: 70%;
+ 
 }
 
 /* -----------header----------------- */
@@ -358,6 +367,7 @@ td.expense {
   background: var(--modalColor);
   padding: 2.4rem;
   position: relative;
+  display:flex;
   width: 80%;
   max-width: 500px;
 }
@@ -434,11 +444,46 @@ input {
   color: #858181;
 }
 
+.dark-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.95);
+
+}
+
 .dark-modal {
   background-color: var(--darkModal);
   color: var(--kindPurple);
-  border: 1px solid #858181;
+  /* border: 1px solid #858181; */
 
+}
+
+.dark-modal::before {
+  content:'';
+  position:absolute;
+  top: -.4rem;
+  bottom: -.4rem;
+  left: -.4rem;
+  right: -.4rem;
+  background:#fff ;
+  z-index: -2;
+  filter: blur(40px);
+
+}
+
+.dark-modal::after {
+  content:'';
+  position:absolute;
+  top: -.4rem;
+  bottom: -.4rem;
+  left: -.4rem;
+  right: -.4rem;
+  background:#fff;
+  z-index: -1;
+}
+
+
+.dark-modal::before,
+.dark-modal::after {
+  background: linear-gradient(60deg, #446e50, #060c21, #45A764) !important;
 }
 
 .dark-theme {
