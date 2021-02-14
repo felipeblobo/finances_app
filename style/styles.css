@@ -168,7 +168,8 @@ a:hover {
   background-color: var(--hoverRed);
   width: 70%;
   height: 70%;
-
+  margin: .8rem;
+ 
   
 }
 
@@ -178,6 +179,7 @@ a:hover {
   background-color: var(--hoverRed);
   width: 70%;
   height: 70%;
+  margin: .8rem;
  
 }
 
@@ -370,6 +372,7 @@ td.expense {
   display:flex;
   width: 80%;
   max-width: 500px;
+  border: 0.2rem solid var(--hoverGreen);
 }
 
 /* -----------form----------------- */
