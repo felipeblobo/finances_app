@@ -98,7 +98,7 @@ const Transaction = {
     );
     document.getElementById("date").value = Utilities.reformatDate(dateText);
 
-    var el = document.getElementById("savebtn");
+    var el = document.getElementById("saveBtn");
 
     el.onclick = function () {
       Transaction.all.splice(index, 1);
