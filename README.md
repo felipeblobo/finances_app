@@ -23,4 +23,4 @@ Esse projeto foi construído durante a Maratona Discover da Rocketseat em Janeir
 
 ## Funcionalidades Adicionais
 
-Além das funcionalidades previstas no projeto delineado pela Rocket, implementei o Modo Noturno e Alteração da cor do Card Total a depender do saldo.
+Além das funcionalidades previstas no projeto delineado pela Rocket, implementei o Modo Noturno, Alteração da cor do Card Total a depender do saldo e a possibilidade de editar as transações cadastradas.
