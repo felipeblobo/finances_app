@@ -18,6 +18,7 @@
   --darkTheme: #151a22;
   --yellow: #f3f34e;
   --edit: #6C63FF;
+  --greenTitle: #4ae47b;
 
 }
 
@@ -183,6 +184,12 @@ header {
   font-weight: 100;
   color: var(--whiteBody);
 }
+
+.greenTitle {
+  color: var(--greenTitle);
+  font-weight:300;
+}
+
 
 /* -----------balance----------------- */
 
