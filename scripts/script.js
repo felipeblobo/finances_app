@@ -2,7 +2,7 @@
 
 const Modal = {
   openClose() {
-    let novaTransacao = document.querySelector(".modal-overlay");
+    let novaTransacao = document.querySelector(".modalOverlay");
     novaTransacao.classList.toggle("active");
   },
 };
@@ -92,7 +92,7 @@ const Transaction = {
 //Show transactions in javascript
 
 const DOM = {
-  transactionsContainer: document.querySelector("#data-table tbody"),
+  transactionsContainer: document.querySelector("#dataTable tbody"),
 
   addTransaction(transaction, index) {
     const tr = document.createElement("tr");

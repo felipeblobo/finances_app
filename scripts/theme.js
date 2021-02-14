@@ -5,7 +5,7 @@ const dayNight = document.querySelector('#dayNight');
 const footer = document.querySelector('footer');
 const modal = document.querySelector('.modal');
 const formTitle = document.querySelector('.h2');
-const darkModalOverlay = document.querySelector('.modal-overlay');
+const darkModalOverlay = document.querySelector('.modalOverlay');
 const cancelButton = document.querySelector('#cancelButton');
 
 
@@ -21,13 +21,13 @@ cancelButton.addEventListener('mouseout', () => {
 const darkMode = btn.addEventListener('click', function() {
 
   // Then toggle (add/remove) classes to change theme
-  document.body.classList.toggle('dark-theme');
-  header.classList.toggle('dark-header');
-  footer.classList.toggle('dark-footer'); 
-  darkModalOverlay.classList.toggle('dark-modal-overlay');
-  modal.classList.toggle('dark-modal');
-  modal.classList.toggle('dark-modal::before');
-  modal.classList.toggle('dark-modal::after');
+  document.body.classList.toggle('darkTheme');
+  header.classList.toggle('darkHeader');
+  footer.classList.toggle('darkFooter'); 
+  darkModalOverlay.classList.toggle('darkModalOverlay');
+  modal.classList.toggle('darkModal');
+  modal.classList.toggle('darkModal::before');
+  modal.classList.toggle('darkModal::after');
   formTitle.classList.toggle('darkTitle');
  
 
